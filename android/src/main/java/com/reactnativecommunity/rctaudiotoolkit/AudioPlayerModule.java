@@ -541,7 +541,10 @@ public class AudioPlayerModule extends ReactContextBaseJavaModule implements Med
 
         WritableMap data = new WritableNativeMap();
 
-        Boolean looping = this.playerLooping.getOrDefault(playerId, false);
+        Boolean looping = this.playerLooping.get(playerId);
+        if (looping == null) {
+            looping = false;
+        }
 
         player.seekTo(0);
         if (looping) {
