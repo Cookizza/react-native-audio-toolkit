@@ -1,5 +1,5 @@
 {
-  "name": "Cookizza/audio-toolkit",
+  "name": "cookizza/audio-toolkit",
   "version": "2.1.0",
   "description": "Cross-platform audio library for React Native",
   "main": "index.js",
